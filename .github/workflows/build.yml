@@ -16,7 +16,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          SONAR_TOKEN: 1ca794540666c94871e1c104e77578b39bb3313f
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   docker-build:
     name: DockerBuildandImageScanning
