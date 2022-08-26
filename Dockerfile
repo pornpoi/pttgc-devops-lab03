@@ -12,3 +12,4 @@ COPY --from=builder /build/main ./blog-service
 
 # executable
 ENTRYPOINT [ "./blog-service" ]
+# add new commit
